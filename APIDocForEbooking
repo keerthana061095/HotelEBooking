@@ -1,0 +1,79 @@
+
+Register:
+
+Post:localhost:8082/register
+
+Request:
+{
+    "name": "keerthana",
+    "emailId": "keerthana@gmail.com",
+    "password": "Keerthana",
+    "phoneNumber": "1313131313"
+}
+Response:
+{
+    "Success": "Registered Successfully"
+}
+
+================================
+Login:
+
+Post:localhost:8082/login
+Request:
+{
+ "emailId": "keerthanatorcher@gmail.com",
+    "password": "Keerthana"
+}
+Response:
+{
+    "Success": "Login Success"
+}
+
+===============================
+Create Room:
+
+Post:localhost:8082/createRoom
+
+Request:
+{
+    "roomId": "113"
+}
+Response:
+{
+    "Success": "Room Created Suucessfully"
+}
+
+===============================
+AvailableRooms
+
+Post:localhost:8082/availableRooms
+
+Request:
+GET Method
+Response:
+{
+    "Success": "Available Room Listed",
+    "AvailableRooms": [
+        {
+            "roomId": "113"
+        }
+    ]
+}
+
+===============================
+book
+
+Post:localhost:8082/book
+
+Request:
+{
+    "roomId": "113",
+    "fromDate":"2021-04-06",
+    "toDate" : "2021-04-07"
+}
+Response:
+{
+    "Success": "Room Successfully Booked"
+}
+=======
+
